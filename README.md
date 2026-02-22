@@ -1,5 +1,4 @@
-# Expert-Dental-Assistant-System
-舒活牙醫聯盟助理管理系統 - 打卡薪資假勤管理
+# Expert Dental Assistant System
 
 ## Project Overview
 This project aims to create an intelligent dental assistant system that can help patients manage their dental health efficiently. The system provides features such as appointment scheduling, treatment reminders, and educational resources on dental health.
