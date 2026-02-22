@@ -1,42 +1,38 @@
-# System Architecture
+# System Architecture Documentation
 
-## Overview
-This document outlines the system design for the Expert Dental Assistant System, detailing the various modules and their interactions.
+## User Management
+- **User Registration**: Users can register with personal details and credentials.
+- **Authentication**: Secure login process to access the system.
+- **User Roles**: Different roles (Admin, Assistant, etc.) with distinct permissions.
+- **User Profiles**: Each user has a profile with their information and settings.
 
-## Modules
+## Clinic Management
+- **Clinic Overview**: Overview of the clinic's services and offerings.
+- **Appointment Scheduling**: System for booking, rescheduling, and cancelling appointments.
+- **Patient Records**: Keeping track of patient details, history, and treatments.
+- **Billing and Invoicing**: Management of patient billing and insurance claims.
 
-### 1. User Management
-- **Purpose:** To handle the registration, authentication, and role-based access control for users.
-- **Key Components:**
-  - User Registration
-  - User Login/Authentication
-  - User Roles (Admin, Clinic Staff, Dentists, Assistants)
-  - Profile Management
+## Assistant Management
+- **Task Assignment**: Admin assigns tasks to assistants based on the schedule.
+- **Performance Tracking**: Metrics to evaluate assistant performance.
+- **Feedback System**: Assistants can receive and give feedback within the system.
 
-### 2. Clinic Management
-- **Purpose:** To manage clinic-related functionalities such as clinic details and patient records.
-- **Key Components:**
-  - Clinic Information (name, address, contact details)
-  - Patient Records (medical history, treatment plans)
-  - Appointment Scheduling
-  - Billing and Invoicing
+## Line LIFF Time Clock System
+- **Check-In/Out**: Assistants can check in and out via Line LIFF.
+- **Time Tracking**: Record of hours worked by each assistant.
+- **Notifications**: Alerts for breaks and end of shifts.
 
-### 3. Assistant Management
-- **Purpose:** To manage dental assistants, their schedules, and tasks.
-- **Key Components:**
-  - Assistant Registration and Profiling
-  - Task Assignment (daily tasks, patient care)
-  - Performance Tracking
-  - Communication Tools (messaging, notifications)
+## Salary Calculation
+- **Salary Structure**: Breakdown of salary components including bonuses and deductions.
+- **Automated Calculation**: System calculates monthly salary based on attendance and performance.
+- **Payroll Management**: Handling and processing payroll for all employees.
 
-### 4. Time Tracking
-- **Purpose:** To track the time spent on various tasks and patients.
-- **Key Components:**
-  - Time Sheets (logging hours worked)
-  - Task Duration Tracking
-  - Reporting Tools (analysis of time spent on tasks)
+## Leave Management
+- **Leave Requests**: Employees can submit leave requests.
+- **Approval Workflow**: Requests go through an approval process by managers.
+- **Leave Balance Tracking**: Monitoring the leave balance of each employee.
 
-## Interaction Between Modules
-- User Management interacts with Clinic Management to authorize access to sensitive patient information.
-- Assistant Management relies on data from Time Tracking to ensure assistants are efficiently utilized across their shifts.
-- All modules are designed to communicate through a centralized database for consistency and data integrity.
+## Approval Workflow
+- **Request Submission**: Users submit requests through the system.
+- **Review Process**: Managers review requests before approval or denial.
+- **Notifications**: Communication to users about the status of their requests.
